@@ -1,4 +1,4 @@
-.<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -59,7 +59,7 @@
     <section class="about-section" id="about">
         <div class="about-container">
           <div class="profile-img-container">
-            <img src="https://i.postimg.cc/KYPDw0cr/IMG-20241217-WA0026.jpg" alt="Kareemah" class="profile-img">
+            <!-- <img src="https://i.postimg.cc/KYPDw0cr/IMG-20241217-WA0026.jpg" alt="Kareemah" class="profile-img"> -->
             <div class="about-content">
                 <h2 class="section-title">About Me</h2>
                 <p class="about-text">
@@ -178,26 +178,43 @@
     </section>
     
     <!-- Practice Projects Section -->
-    <section class="practice-projects">
+    <section class="practice-projects" id="projects">
         <div class="container">
             
                 <h2>Practice Projects</h2>
                 <p>HTML/CSS exercises to sharpen my frontend skills</p>
-            
-            
-            <div class="project-grid">
-                <!-- Practice Project 1 -->
-                <div class="project-card">
-                    <div class="project-content">
+        </div>
+                              <div class="project-grid"> 
+
+                <!-- Practice Project 1 -->           
+                    <div class="project-card">
+                        <div class="project-content">
+                    
+                        
                         <h3>Profile Card</h3>
                         <p>A clean and responsive profile card layout built with HTML and CSS</p>
-                        <a href="https://codepen.io/Kareema-Ahmad/pen/xbbJxyY" class="project-btn">View on CodePen</a>
+
+                        <!-- PROJECT LINKS -->
+                         <div class="project-links">
+                        <a href="https://github.com/Rheems/FRONTEND-DEV-PROFILE-CARD" 
+                        class="project-btn code-btn" target="_blank">
+                        <i class="fas fa-code"></i>View Code</a>
+                        
+
+<a href="https://rheems.github.io/FRONTEND-DEV-PROFILE-CARD/" class="project-btn live-btn"
+target="_blank">
+<i class="fas fa-eye"></i>Live Demo</a>
+                         </div>
+<!-- TECH TAGS -->
                         <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
                         </div>
                     </div>
                 </div>
+        
+    
                 
                 <!-- Practice Project 2 -->
                 <div class="project-card">
@@ -205,10 +222,19 @@
                         <h3>Lets have the BEST-COFFEE</h3>
                         <p>A beautiful webpage with a cozy coffee-themed background, created using HTML and CSS.</p>
       
-                        <a href="https://rheems.github.io/BEST-COFFEE/" class="project-btn">View on GitHub</a>
+                        <!-- PROJECT LINKS -->
+                        <a href="https://rheems.github.io/BEST-COFFEE/" class="project-btn live-btn"
+                        target="_blank">
+                        <i class="fas fa-eye"></i>Live Demo</a>
+
+                        <a href="https://github.com/Rheems/BEST-COFFEE"
+                        class="project-btn live btn" target="_blank">
+                    <i class="fas fa-code"></i>View Code</a>
+                    </div>
                         <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag"> Responsive</span>
                         </div>
                     </div>
                 </div>
@@ -218,29 +244,51 @@
                     <div class="project-content">
                         <h3>Cat Lovers Page</h3>    
         <p>A fun landing page for cat lovers built during practice sessions</p>
-          <a href="https://rheems.github.io/CAT-LOVERS/" class="project-btn">View on GitHub</a>
+
+        <!-- PROJECT LINK -->
+          <a href="https://rheems.github.io/CAT-LOVERS/" class="project-btn live-btn"
+          target="_blank">
+          <i class="fas fa-eye"></i>Live Demo</a>
+
+          <a href="https://github.com/Rheems/BEST-COFFEE" class="project-btn live-btn"
+          target="_blank">
+          <i class="fas fa-code"></i>View Code</a>
+          </div>
+
                         <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
                         </div>
                     </div>
                 </div>
+                
                 
                 <!-- Practice Project 4 -->
                 <div class="project-card">
                     <div class="project-content">
                         <h3>Jameel Jiddan Taco Foods</h3>
                         <p>Buy your mouthwatering Taco food at Affordable prices </p>
-                        <a href="https://codepen.io/Kareema-Ahmad/pen/azOgPVz" class="project-btn">View on CodePen</a>
+
+                        <!-- PROJECT LINKS -->
+                        <a href="https://codepen.io/Kareema-Ahmad/full/azOgPVz" class="project-btn live-btn"
+                        target="_blank">
+                        <i class="fas fa-eye"></i>Live Demo</a>
+
+                        <a href="https://codepen.io/Kareema-Ahmad/pen/azOgPVz" class="project-btn live-btn"
+                        target="_blank">
+                        <i class="fas fa-code"></i>View Code</a>
+</div>
                         <div class="tech-tags">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">Responsive</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
     </section>
+
+    
 
 <!-- Contact Section -->
  <section class="contact-section" id="contact">
@@ -287,13 +335,15 @@
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div>akareema201@gmail.com</div>
+                    <a href="mailto:akareema201@gmail.com" class="contact-link">akareema201@gmail.com</a>
                 </div>
+
+                <!-- phone with tel -->
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <div>07055656476</div>
+                <a href="tel:+2347055656476" class="contact-link"> +234 705 565 6476</a>
                 </div>
             </div>
 
@@ -309,14 +359,15 @@
                 </a>
 
                 <!-- instagram -->
-                <a href="https://instagram.com/creamykareemah" class="social-link instagram" target="_blank">
+                <a href="" class="social-link instagram" target="_blank">
                     <i class="fab fa-instagram"></i>
                   <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="instagram" width="30" 
                     />
                 </a>
 
                 <!-- linkedin -->
-                <a href="https://www.linkedin.com/in/kareemah-ahmad-yusuf-cspo®-2b8b2b341 " class="social-link LinkedIn" target="_blank">
+                <a href="https://www.linkedin.com/in/kareemah-ahmad-yusuf-cspo%C2%AE-2b8b2b341?utm_source=share&utm_
+                campaign=share_via&utm_content=profile&utm_medium=android_app " class="social-link LinkedIn" target="_blank">
                   <i class="fab fa-linkedin-in"></i>
                     <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="30"
                     />

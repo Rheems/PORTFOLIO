@@ -386,16 +386,20 @@ h2:after {
   background: var(--primary);
 }
 
-/* Projects Grid */
-.project-grid {
+ /* container for all project */
+.project-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(2 1fr);  
   gap: 2rem;
+  padding: 2rem ;
 }
-
+/* each project card */
 .project-card {
+  
   background: white;
   border-radius: 10px;
+  gap: 2rem;
+  margin:3rem ;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -409,19 +413,23 @@ h2:after {
   padding: 1.5rem;
 }
 
-.project-card h3 {
-  font-size: 1.5rem;
+.project-content h3 {
   margin-bottom: 1rem;
   color: var(--primary);
 }
 
+.project-links{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
 .project-card p {
   color: var(--text-light);
   margin-bottom: 1.5rem;
 }
 
 .project-btn {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 0.8rem 1.5rem;
   background-color: var(--primary);
   color: white;
@@ -451,81 +459,34 @@ h2:after {
   font-weight: 500;
 }
 
-/* Practice Projects Section */
-.practice-projects {
-  padding: 3rem 0;
-  background: #f8f9fa;
-}
+ */
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
+.live-btn,.code-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .live-btn {
+            background: #8B0000;
+            color: white;
+        }
+        
+        .code-btn {
+            background: #333;
+            color: white;
+        }
+        
+        .live-btn:hover, .code-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
 
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
-}
 
-.project-card {
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-}
-
-.project-content {
-  padding: 1.5rem;
-}
-
-.project-card h3 {
-  margin: 0 0 0.5rem;
-  color: #8b0000;
-}
-
-.project-card p {
-  color: #555;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-}
-
-.project-links {
-  display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.project-btn {
-  display: inline-block;
-  padding: 0.6rem 1.2rem;
-  background: #8b0000;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-.tech-tags {
-  display: flex;
-  gap: 0.5rem;
-}
-
-.tech-tag {
-  background: #f0e0e0;
-  color: #8b0000;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
-}
 
 .contact-section {
   max-width: 800px;
@@ -673,8 +634,8 @@ textarea.form-control {
 .whatsapp { background: #25D366; }
         .instagram { background: #E4405F; }
         .linkedin { background: #0A66C2; }
-        .github { background: grey; }
-        .codepen { background: pink; }
+        .github { background: #181717; }
+        .codepen { background: #000000; }
         
   
 
