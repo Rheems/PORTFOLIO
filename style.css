@@ -9,71 +9,65 @@ body {
   color: black;
   line-height: 1.9;
   padding: 0;
+} /* Navbar Styles */
+.navbar {
+  background: #8b0000;
+  padding: 1.5rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
 
-}/* Navbar Styles */
-        .navbar {
-            background: #8B0000;
-            padding: 1.5rem 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        /* Name/Logo Styling - Playfair Display */
-        .logo {
-            color: white;
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: 1.8rem;
-            letter-spacing: 0.5px;
-            text-decoration: none;
-            margin-right: auto; /* Pushes nav links to the right */
-            padding-right: 2rem;
-        }
-        
-        /* Nav Links Styling - Poppins */
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .nav-links a:hover {
-            opacity: 0.9;
-        }
-        
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            background: white;
-            bottom: -5px;
-            left: 0;
-            transition: width 0.3s ease;
-        }
-        
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-        
-       
+/* Name/Logo Styling - Playfair Display */
+.logo {
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  margin-right: auto; /* Pushes nav links to the right */
+  padding-right: 2rem;
+}
 
+/* Nav Links Styling - Poppins */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-family: "Poppins", sans-serif;
+}
 
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
 
-} /* Container */
+.nav-links a:hover {
+  opacity: 0.9;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: white;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+/* Container */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -388,16 +382,15 @@ h2:after {
   background: var(--primary);
 }
 
- /* container for all project */
+/* container for all project */
 
-.project-grid{
+.project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));  
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-
 }
 /* each project card */
-.projects-section{
+.projects-section {
   padding: 40px 20px;
   background-color: #f9f9f9;
 }
@@ -418,28 +411,25 @@ h2:after {
 }
 
 .project-card:hover {
-  transform: translateY(-5px); 
-   box-shadow: 0, 10px 25px rgba(0, 0, 0, 0.1);
-
+  transform: translateY(-5px);
+  box-shadow: 0, 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .project-content {
   padding: 1.5rem;
-
 }
 
 .project-card h3 {
   margin-bottom: 16px;
   color: var(--primary);
   font-size: 24px;
-
 }
 
 .project-links {
   margin: 15px 0;
 }
 
-.project-links a{
+.project-links a {
   display: inline-block;
   margin-right: 10px;
   font-weight: bold;
@@ -449,7 +439,7 @@ h2:after {
   margin-bottom: 15px;
 }
 
-.project-card h2{
+.project-card h2 {
   color: #6b0000;
   margin-bottom: 1rem;
   font-size: 1.5rem;
@@ -459,9 +449,9 @@ h2:after {
 
 /* buttons section */
 .project-btn {
-   display: inline-block; 
-   margin: 6px 8px 6px 0;
-   gap: 1rem;
+  display: inline-block;
+  margin: 6px 8px 6px 0;
+  gap: 1rem;
   padding: 8px 12px;
   background-color: grey;
   color: black;
@@ -469,10 +459,9 @@ h2:after {
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s;
-
 }
 
-.project-buttons{
+.project-buttons {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -483,7 +472,7 @@ h2:after {
   background-color: #6b0000;
 }
 
-.demo-btn{
+.demo-btn {
   background-color: var(--secondary);
   color: #6b0000;
 }
@@ -502,34 +491,32 @@ h2:after {
   font-weight: 500;
 }
 
+.live-btn,
+.code-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
 
+.live-btn {
+  background: #8b0000;
+  color: white;
+}
 
-.live-btn,.code-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.7rem 1.2rem;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        
-        .live-btn {
-            background: #8B0000;
-            color: white;
-        }
-        
-        .code-btn {
-            background: #333;
-            color: white;
-        }
-        
-        .live-btn:hover, .code-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-        }
+.code-btn {
+  background: #333;
+  color: white;
+}
 
-
+.live-btn:hover,
+.code-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
 
 .contact-section {
   max-width: 800px;
@@ -671,78 +658,81 @@ textarea.form-control {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
-
 }
 
-.whatsapp { background: #25D366; }
-        .instagram { background: #E4405F; }
-        .linkedin { background: #0A66C2; }
-        .github { background: #181717; }
-        .codepen { background: #000000; }
-        
-  
-
-
+.whatsapp {
+  background-color: green;
+}
+.instagram {
+  background-color: #e4405f;
+}
+.linkedin {
+  background-color: #0a66c2;
+}
+.github {
+  background-color: wheat;
+}
+.codepen {
+  background-color: pink;
+}
 
 .social-link:hover {
   transform: translateY(-3px);
+  color: #6b0000;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-        @media (max-width: 992px) {
-            .about-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .profile-img {
-                width: 250px;
-                height: 250px;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                padding: 1rem;
-            }
-            
-            .nav-links {
-                margin-top: 1rem;
-                gap: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .button-group {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .btn {
-                width: 100%;
-                max-width: 250px;
-            }
-            .project-grid {
-              grid-template-columns: 1fr;
-            }
-            .project-buttons{
-              flex-direction: row;
-              justify-content: space-between;
-            }
-            .project-btn {
-              flex: 1;
-              padding: 0.7rem 0.5rem;
-              font-size: 0.9rem;
-            }
-        }
-    
+@media (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+}
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    margin-top: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .project-btn {
+    flex: 1;
+    padding: 0.7rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
 
 /* Footer */
 .footer {
